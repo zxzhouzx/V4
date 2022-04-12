@@ -2,8 +2,7 @@
 #include<stdlib.h>
 
 char* getOperand(char* p, double* pnum);
-
-int main()
+void main()
 {
 	char exp[]="1-2.5*4+10.2/5.1";
 	char * p = exp, op[20];
@@ -49,7 +48,6 @@ int main()
 			}
 		}
 	printf("result:%.21f\n", result);
-	return 0;
 }
 
 char* getOperand(char* p, double* pnum)
